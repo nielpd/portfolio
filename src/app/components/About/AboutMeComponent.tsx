@@ -119,11 +119,11 @@ export default function About() {
   ];
 
   return (
-    <div className="">
-      <div className="flex justify-center items-center gap-4 text-zinc-950 text-center text-sm habilities">
+    <div className="px-4">
+      <div className="flex flex-wrap justify-center items-center gap-4 text-zinc-950 text-center text-sm habilities">
         {habilities.map((hability, index) => (
           <div
-            className="habilities-item flex flex-col justify-center items-center gap-4 p-12 shadow-[0px_7px_25px_0px_#000000] bg-[#282828] w-[400px] h-[300px] rounded-md"
+            className="habilities-item flex flex-col justify-center items-center gap-4 p-6 md:p-12 shadow-[0px_7px_25px_0px_#000000] bg-[#282828] w-full sm:w-[300px] md:w-[400px] h-[300px] rounded-md"
             key={index}
           >
             <span>
@@ -146,8 +146,8 @@ export default function About() {
           </div>
         ))}
       </div>
-      <div className="flex gap-12">
-        <div className="about flex flex-col text-start w-[600px] h-[560px] justify-center gap-4 mt-24 p-12 shadow-[0px_7px_15px_0px_#000000] rounded-md bg-[#282828]">
+      <div className="flex flex-col md:flex-row gap-12">
+        <div className="about flex flex-col text-start w-full md:w-[600px] h-auto md:h-[560px] justify-center gap-4 mt-24 p-6 md:p-12 shadow-[0px_7px_15px_0px_#000000] rounded-md bg-[#282828]">
           <h1 className="font-bold text-2xl text-white">Sobre Mim</h1>
           <p className="text-[#5B5B5B] text-base font-semibold">
             Desde cedo, sempre fui movido pela curiosidade em relação à
@@ -173,12 +173,12 @@ export default function About() {
             crescer continuamente e aprimorar minhas habilidades.
           </p>
         </div>
-        <div className="flex flex-col gap-[75px] mt-24 items-end text-start relative training">
-          <div className="absolute left-0 top-0 h-full w-[2px] bg-[#6672F6] pr-2 rounded-xl training-item"></div>{" "}
+        <div className="flex flex-col gap-[50px] md:gap-[75px] mt-24 items-end text-start relative training">
+          <div className="absolute left-0 top-0 h-full w-[2px] bg-[#922828] pr-2 rounded-xl training-item"></div>{" "}
           {trainings.map((training, index) => {
             return (
               <div
-                className="flex flex-col gap-2 shadow-[0px_7px_15px_0px_#000000] h-[136px] w-[574px] p-4 rounded-md bg-[#282828] relative training-item"
+                className="flex flex-col gap-2 shadow-[0px_7px_15px_0px_#000000] h-[136px] w-full md:w-[574px] p-4 rounded-md bg-[#282828] relative training-item"
                 key={index}
               >
                 <h1 className="text-lg text-white font-bold">{training.title}</h1>
@@ -186,12 +186,12 @@ export default function About() {
                   {training.school}
                 </p>
                 <p className="text-[#5B5B5B] text-sm font-semibold">
-                <strong>{training.type}</strong>
+                  <strong>{training.type}</strong>
                 </p>
                 <p className="text-[#5B5B5B] text-sm font-semibold">
-                {training.year}
+                  {training.year}
                 </p>
-                <div className="absolute left-[-16px] top-[50%] transform -translate-y-1/2 bg-[#282828] h-6 w-6 rounded-full border-[2px] border-[#6672F6]"></div>
+                <div className="absolute left-[-16px] top-[50%] transform -translate-y-1/2 bg-[#282828] h-6 w-6 rounded-full border-[2px] border-[#922828]"></div>
               </div>
             );
           })}

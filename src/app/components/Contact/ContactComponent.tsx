@@ -1,10 +1,7 @@
-'use client'
+// components/Contact.tsx
+'use client';
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
-import Link from "next/link";
-import { FaWhatsappSquare, FaLinkedin, FaGithubSquare } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
-
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -35,85 +32,48 @@ export default function Contact() {
   };
 
   return (
-    <div className="shadow-[0px_7px_15px_0px_#000000] w-[1230px] h-[700px] text-zinc-950 flex mt-24 p-12 bg-[#282828] rounded-md">
-      <div className="flex">
-        <form onSubmit={sendEmail} className="gap-12 w-auto">
-        <div>
-          <div className="flex flex-col gap-4 mb-24 w-[800px]">
-            <h1 className="text-white font-bold text-3xl">Contato</h1>
-            <p className="text-[#5B5B5B] text-xl font-semibold">Atualmente, Procurando oportunidade como Desenvolvedor Júnior
-            Estou Disponível para contato através do formulário abaixo ou redes sociais.</p>
-          </div>
-          </div>
-
-        <div className="flex flex-row gap-4 w-full">
-          <div className="items-center">
-          <label htmlFor="name" className="text-white font-semibold pr-4">Nome:</label>
+    <div className="w-auto justify-center lg:w-[1230px] h-auto lg:h-[700px] flex flex-col lg:flex-row mt-12 lg:mt-24 p-6 lg:p-12 bg-[#282828] rounded-md shadow-lg">
+      <div className="flex flex-col w-fit lg:w-2/3">
+        <h1 className="text-white font-bold text-2xl lg:text-3xl mb-6">Entre em Contato</h1>
+        <p className="text-[#5B5B5B] text-lg lg:text-xl mb-12">
+          Atualmente, estou buscando oportunidades como Desenvolvedor Júnior. Fique à vontade para me contatar através do formulário abaixo ou por meio das minhas redes sociais.
+        </p>
+        <form onSubmit={sendEmail} className="flex flex-col gap-6">
           <input
             type="text"
             id="name"
+            placeholder="Seu Nome"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="bg-[#3F3F3F] rounded-md h-12 w-64 text-zinc-400"
+            className="bg-[#3F3F3F] rounded-md h-12 text-zinc-400 p-2"
           />
-          </div>
-          <div className="items-center">
-            <label htmlFor="email" className="text-white font-semibold pr-4">E-mail:</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="bg-[#3F3F3F] rounded-md h-12 w-64 text-zinc-400"
-            />
-          </div>
-        </div>
-          <div className="flex flex-col">
-          <div className="mt-6 ">
+          <input
+            type="email"
+            id="email"
+            placeholder="Seu E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            className="bg-[#3F3F3F] rounded-md h-12 text-zinc-400 p-2"
+          />
           <textarea
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            placeholder="Escreva aqui sua mensagem! 🚀"
-            className="bg-[#3F3F3F] rounded-md w-[665px] h-[300px] p-2 mb-6 resize-none text-zinc-400"
+            placeholder="Escreva sua mensagem aqui! 🚀"
+            className="bg-[#3F3F3F] rounded-md h-[200px] p-4 resize-none text-zinc-400"
           />
-        </div>
-        <button type="submit" className="w-80 h-8 flex justify-center items-center border-2 border-[#6672F6] rounded-md p-2 text-white font-semibold hover:transition ease-in-out hover:text-[#6672F6] hover:scale-110 hover:bg-white hover:border-none">Enviar</button>
-        </div>
+          <button 
+            type="submit" 
+            className="w-full h-12 bg-[#922828] text-white font-semibold rounded-md hover:bg-white hover:text-[#922828] transition ease-in-out">
+            Enviar
+          </button>
         </form>
       </div>
-      <div className="flex flex-col border-l-white border-l-2 justify-center pl-8 gap-8 text-zinc-500">
-        <Link href="https://wa.link/osr8cz" target="_blank">
-        <button className="flex items-center gap-2 hover:pl-4 hover:transition ease-in-out hover:text-zinc-300">
-        <FaWhatsappSquare className="text-4xl"/>
-        <h1 className="text-xl font-semibold">Whatsapp Business</h1>
-        </button>
-        </Link>
 
-        <Link href="https://www.linkedin.com/in/daniel-assis-09a295321/" target="_blank">
-        <button className="flex items-center gap-2 hover:pl-4 hover:transition ease-in-out hover:text-zinc-300">
-        <FaLinkedin className="text-4xl"/>
-        <h1 className="text-xl font-semibold">LinkedIn</h1>
-        </button>
-        </Link>
-
-        <Link href="https://github.com/nielassis" target="_blank">
-        <button className="flex items-center gap-2 hover:pl-4 hover:transition ease-in-out hover:text-zinc-300">
-        <FaGithubSquare className="text-4xl"/>
-        <h1 className="text-xl font-semibold">GitHub</h1>
-        </button>
-        </Link>
-
-        <Link href="https://mailto:nielvitorba@gmail.com" target="_blank">
-        <button className="flex items-center gap-2 hover:pl-4 hover:transition ease-in-out hover:text-zinc-300">
-        <IoMdMail className="text-4xl"/>
-        <h1 className="text-xl font-semibold">E-mail</h1>
-        </button>
-        </Link>
-      </div>
+    
     </div>
   );
 }

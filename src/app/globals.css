@@ -21,6 +21,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.logo {
+  border-radius: 50%;
+}
+
 html {
   scroll-behavior: smooth;
 }
