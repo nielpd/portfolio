@@ -29,9 +29,9 @@ export default function Hero() {
             FULLSTACK
           </h2>
           <span className="flex gap-6 items-center ml-8 text-white">
-            <FaLinkedin size={40} className="hover:scale-125 transition-transform duration-300 ease-in-out hover:text-blue-600" />
+            <FaLinkedin size={40} className="hover:scale-125 transition-transform duration-300 ease-in-out hover:text-black" />
             <FaGithubSquare size={40} className="hover:scale-125 transition-transform duration-300 ease-in-out hover:text-[#000]" />
-            <FaWhatsappSquare size={40} className="hover:scale-125 transition-transform duration-300 ease-in-out hover:text-green-500" />
+            <FaWhatsappSquare size={40} className="hover:scale-125 transition-transform duration-300 ease-in-out hover:text-black" />
           </span>
         </div>
         <h1 className="text-black text-8xl font-bold">DEVELOPER</h1>
