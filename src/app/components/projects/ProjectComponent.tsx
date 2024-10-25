@@ -1,5 +1,5 @@
 'use client';
-import { FaGlobe, FaDatabase } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa";
 import { SiTypescript, SiReact, SiNestjs, SiNodedotjs, SiTailwindcss, SiPrisma, SiTurborepo, SiDrizzle, SiFastify } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { gsap } from "gsap";
@@ -175,9 +175,6 @@ export default function Projects() {
           <div className="w-full lg:w-1/2">
             <h1 className="text-white font-bold text-2xl flex gap-4 items-center mb-6">
               {project.name}
-              <a href={project.deployLink} target="_blank" rel="noopener noreferrer" className="hover:text-[#922828] transition duration-300">
-                <FaGlobe className="hover:scale-110" />
-              </a>
               <a href={project.gitLink} target="_blank" rel="noopener noreferrer" className="hover:text-[#922828] transition duration-300">
                 <BsGithub className="hover:scale-110" />
               </a>
