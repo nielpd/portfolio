@@ -1,7 +1,7 @@
-// components/Contact.tsx
 'use client';
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
+
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -32,8 +32,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="w-auto justify-center lg:w-[1230px] h-auto lg:h-[700px] flex flex-col lg:flex-row mt-12 lg:mt-24 p-6 lg:p-12 bg-[#282828] rounded-md shadow-lg">
-      <div className="flex flex-col w-fit lg:w-2/3">
+    <div className="w-full max-w-[420px] bg-[#282828] mx-auto p-6 lg:p-12 rounded-md shadow-lg mt-12 lg:mt-24 sm:max-w-[90%] md:max-w-[80%]">
+      <div className="flex flex-col">
         <h1 className="text-white font-bold text-2xl lg:text-3xl mb-6">Entre em Contato</h1>
         <p className="text-[#5B5B5B] text-lg lg:text-xl mb-12">
           Atualmente, estou buscando oportunidades como Desenvolvedor Júnior. Fique à vontade para me contatar através do formulário abaixo ou por meio das minhas redes sociais.
@@ -72,8 +72,6 @@ export default function Contact() {
           </button>
         </form>
       </div>
-
-    
     </div>
   );
 }

@@ -119,7 +119,7 @@ function SimpleImageSlider({ images }: { images: (StaticImageData | string)[] })
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
       setFade(false);
-    }, 500); // Tempo da transição de fade
+    }, 50); // Tempo da transição de fade
   };
 
   const prevSlide = () => {

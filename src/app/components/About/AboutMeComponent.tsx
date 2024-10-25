@@ -99,7 +99,7 @@ export default function About() {
 
   const trainings = [
     {
-      title: "Técnico em desenvolvimento WEB",
+      title: "Técnico em Desenvolvimento WEB",
       school: "SENAI CPF Pedro Martins Guerra",
       type: "Nivel: Técnico",
       year: "2023-2024",
@@ -111,7 +111,7 @@ export default function About() {
       year: "2024-2026",
     },
     {
-      title: "Técnico em desenvolvimento de sistemas",
+      title: "Técnico em Desenvolvimento de Sistemas",
       school: "SENAI CPF Pedro Martins Guerra",
       type: "Nivel: Técnico",
       year: "2024-2026",
