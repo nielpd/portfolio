@@ -5,7 +5,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useState } from "react";
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { BsGithub } from "react-icons/bs";
 import inorbit1 from '/src/app/assets/projects/inorbit/inorbit1.png';
 import inorbit2 from '/src/app/assets/projects/inorbit/inorbit2.png';
@@ -110,7 +110,7 @@ function Tooltip({ text, children }: { text: string; children: React.ReactNode }
   );
 }
 
-function SimpleImageSlider({ images }: { images: string[] }) {
+function SimpleImageSlider({ images }: { images: (StaticImageData | string)[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(false);
 
@@ -134,7 +134,7 @@ function SimpleImageSlider({ images }: { images: string[] }) {
     <div className="relative w-full h-56 bg-zinc-800 rounded-lg shadow-lg overflow-hidden">
       <div className="relative w-full h-full">
         <Image
-          src={images[currentIndex]}
+          src={images[currentIndex]} // Agora aceitando StaticImageData ou string
           alt={`slide-${currentIndex}`}
           layout="fill"
           objectFit="cover"
