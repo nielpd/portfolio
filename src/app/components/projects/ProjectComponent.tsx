@@ -10,10 +10,10 @@ import { BsGithub } from "react-icons/bs";
 import inorbit1 from '/src/app/assets/projects/inorbit/inorbit1.png';
 import inorbit2 from '/src/app/assets/projects/inorbit/inorbit2.png';
 import inorbit3 from '/src/app/assets/projects/inorbit/inorbit3.png';
-import gam3rstore1 from '/src/app/assets/projects/gam3rstore/gam3rstore1.png';
-import gam3rstore2 from '/src/app/assets/projects/gam3rstore/gam3rstore2.png';
-import gam3rstore3 from '/src/app/assets/projects/gam3rstore/gam3rstore3.png';
-import gam3rstore4 from '/src/app/assets/projects/gam3rstore/gam3rstore4.png';
+import gam3rstore1 from '/src/app/assets/projects/techstore/gam3rstore1.png';
+import gam3rstore2 from '/src/app/assets/projects/techstore/gam3rstore2.png';
+import gam3rstore3 from '/src/app/assets/projects/techstore/gam3rstore3.png';
+import gam3rstore4 from '/src/app/assets/projects/techstore/gam3rstore4.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -127,7 +127,7 @@ function SimpleImageSlider({ images }: { images: (StaticImageData | string)[] })
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
       setFade(false);
-    }, 500); // Tempo da transição de fade
+    }, 100); // Tempo da transição de fade
   };
 
   return (
