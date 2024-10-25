@@ -10,15 +10,16 @@ import { BsGithub } from "react-icons/bs";
 import inorbit1 from '/src/app/assets/projects/inorbit/inorbit1.png';
 import inorbit2 from '/src/app/assets/projects/inorbit/inorbit2.png';
 import inorbit3 from '/src/app/assets/projects/inorbit/inorbit3.png';
-import techstore1 from '/src/app/assets/projects/techstore/techstore1.jpg';
-import techstore2 from '/src/app/assets/projects/techstore/techstore2.jpg';
-import techstore3 from '/src/app/assets/projects/techstore/techstore3.jpg';
+import gam3rstore1 from '/src/app/assets/projects/gam3rstore/gam3rstore1.png';
+import gam3rstore2 from '/src/app/assets/projects/gam3rstore/gam3rstore2.png';
+import gam3rstore3 from '/src/app/assets/projects/gam3rstore/gam3rstore3.png';
+import gam3rstore4 from '/src/app/assets/projects/gam3rstore/gam3rstore4.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    name: "TechStore",
+    name: "Gam3rStore",
     description: `A T3chStore é uma loja eletrônica desenvolvida com foco em 
     desempenho, modernidade e eficiência. O projeto utiliza uma stack 
     robusta e atual, combinando TypeScript para segurança no desenvolvimento,
@@ -43,12 +44,13 @@ const projects = [
       { component: SiTailwindcss, name: "TailwindCSS" },
     ],
     images: [
-      techstore1,
-      techstore2,
-      techstore3,
+      gam3rstore1,
+      gam3rstore2,
+      gam3rstore3,
+      gam3rstore4,
     ],
-    deployLink: "https://link-do-deploy-do-techstore.com",
-    gitLink: "https://github.com/nielassis/techstore",
+    deployLink: "https://link-do-deploy-do-gam3rstore.com",
+    gitLink: "https://github.com/nielassis/gam3rstore",
   },
   {
     name: "InOrbit",
