@@ -32,7 +32,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="w-full max-w-[420px] bg-[#282828] mx-auto p-6 lg:p-12 rounded-md shadow-lg mt-12 lg:mt-24 sm:max-w-[90%] md:max-w-[80%]">
+    <div className="w-full max-w-[420px] bg-[#282828] mx-auto p-6 lg:p-12 rounded-md mt-12 lg:mt-24 sm:max-w-[90%] md:max-w-[80%]">
       <div className="flex flex-col">
         <h1 className="text-white font-bold text-2xl lg:text-3xl mb-6">Entre em Contato</h1>
         <p className="text-[#5B5B5B] text-lg lg:text-xl mb-12">
