@@ -50,7 +50,7 @@ const projects = [
       gam3rstore4,
     ],
     deployLink: "https://link-do-deploy-do-gam3rstore.com",
-    gitLink: "https://github.com/nielassis/gam3rstore",
+    gitLink: "https://github.com/nielassis/gam3r.store",
   },
   {
     name: "InOrbit",
