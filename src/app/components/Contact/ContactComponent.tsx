@@ -34,15 +34,15 @@ export default function Contact() {
   return (
     <div className="w-full max-w-[420px] bg-[#282828] mx-auto p-6 lg:p-12 rounded-md mt-12 lg:mt-24 sm:max-w-[90%] md:max-w-[80%]">
       <div className="flex flex-col">
-        <h1 className="text-white font-bold text-2xl lg:text-3xl mb-6">Entre em Contato</h1>
+        <h1 className="text-white font-bold text-2xl lg:text-3xl mb-6">Get In Touch</h1>
         <p className="text-[#5B5B5B] text-lg lg:text-xl mb-12">
-          Atualmente, estou buscando oportunidades como Desenvolvedor Júnior. Fique à vontade para me contatar através do formulário abaixo ou por meio das minhas redes sociais.
+        I am currently looking for opportunities as a Junior Developer. Feel free to contact me using the form below or through my social media.
         </p>
         <form onSubmit={sendEmail} className="flex flex-col gap-6">
           <input
             type="text"
             id="name"
-            placeholder="Seu Nome"
+            placeholder="Your Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -51,7 +51,7 @@ export default function Contact() {
           <input
             type="email"
             id="email"
-            placeholder="Seu E-mail"
+            placeholder="Your E-mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -62,13 +62,13 @@ export default function Contact() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            placeholder="Escreva sua mensagem aqui! 🚀"
+            placeholder="Write your message here! 🚀"
             className="bg-[#3F3F3F] rounded-md h-[200px] p-4 resize-none text-zinc-400"
           />
           <button 
             type="submit" 
             className="w-full h-12 bg-[#922828] text-white font-semibold rounded-md hover:bg-white hover:text-[#922828] transition ease-in-out">
-            Enviar
+            Submit
           </button>
         </form>
       </div>

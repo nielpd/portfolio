@@ -78,42 +78,42 @@ export default function About() {
 
   const habilities = [
     {
-      title: "Trabalho em equipe",
+      title: "Teamwork",
       icons: [{ component: FaUser }],
       description:
-        "Gosto de colaborar com outras pessoas, aprendendo e compartilhando conhecimento para alcançar os melhores resultados em conjunto.",
+        "I like collaborating with other people, learning and sharing knowledge to achieve the best results together.",
     },
     {
-      title: "Criatividade e aprendizagem contínua",
+      title: "Creativity and continuous learning",
       icons: [{ component: PiAirplaneTakeoffFill }],
       description:
-        "Sempre estou em busca de novas formas de resolver problemas e me mantenho atualizado, aprendendo continuamente novas tecnologias e ferramentas.",
+        "I'm always looking for new ways to solve problems and I stay up to date, continually learning new technologies and tools.",
     },
     {
-      title: "Adaptabilidade",
+      title: "Adaptability",
       icons: [{ component: BsCodeSlash }],
       description:
-        "Estou sempre aberto a aprender novas tecnologias e me ajustar a situações, vejo mudanças como oportunidades para solucionar desafios inesperados.",
+        "I am always open to learning new technologies and adjusting to situations, I see changes as opportunities to solve unexpected challenges.",
     },
   ];
 
   const trainings = [
     {
-      title: "Técnico em Desenvolvimento WEB",
+      title: "WEB Development Technician",
       school: "SENAI CPF Pedro Martins Guerra",
-      type: "Nivel: Técnico",
+      type: "Level: Technician",
       year: "2023-2024",
     },
     {
       title: "Projeto Desenvolve",
       school: "Projeto Desenvolve | PMI | Google | UFMG | Microsoft",
-      type: "Nivel: Superior",
+      type: "Level: Superior",
       year: "2024-2026",
     },
     {
-      title: "Técnico em Desenvolvimento de Sistemas",
+      title: "Systems Development Technician",
       school: "SENAI CPF Pedro Martins Guerra",
-      type: "Nivel: Técnico",
+      type: "Level: Technician",
       year: "2024-2026",
     },
   ];
@@ -148,29 +148,29 @@ export default function About() {
       </div>
       <div className="flex flex-col md:flex-row gap-12">
         <div className="about flex flex-col text-start w-full md:w-[600px] h-auto md:h-[560px] justify-center gap-4 mt-24 p-6 md:p-12 shadow-[0px_7px_15px_0px_#000000] rounded-md bg-[#282828]">
-          <h1 className="font-bold text-2xl text-white">Sobre Mim</h1>
+          <h1 className="font-bold text-2xl text-white">About Me</h1>
           <p className="text-[#5B5B5B] text-base font-semibold">
-            Desde cedo, sempre fui movido pela curiosidade em relação à
-            tecnologia. Meu primeiro contato com o mundo da programação
-            aconteceu em 2018, quando eu tinha apenas 12 anos. Foi nesse momento
-            que comecei a programar microcontroladores usando as linguagens C e
-            C++, o que despertou em mim uma paixão pelo desenvolvimento de
-            soluções tecnológicas.
+          From an early age, I was always driven by curiosity about
+          technology. My first contact with the world of programming
+          It happened in 2018, when I was just 12 years old. It was at that moment
+          I started programming microcontrollers using the C and
+          C++, which awakened in me a passion for developing
+          technological solutions.
           </p>
           <p className="text-[#5B5B5B] text-base font-semibold">
-            Ao longo da minha trajetória, passei por diversas descobertas e
-            desafios que moldaram meu crescimento profissional. Cada nova
-            ferramenta, linguagem ou framework que aprendi abriu portas para
-            trilhas de conhecimento mais profundas. O que começou com a
-            programação de hardware evoluiu para o desenvolvimento de sistemas
-            completos, tanto no front-end quanto no back-end, com foco na
-            criação de soluções eficientes, modernas e escaláveis.
+          Throughout my career, I have experienced several discoveries and
+          challenges that shaped my professional growth. Each new
+          tool, language or framework I learned opened doors to
+          deeper knowledge trails. What started with
+          hardware programming evolved into systems development
+          complete, both on the front-end and back-end, with a focus on
+          creation of efficient, modern and scalable solutions.
           </p>
           <p className="text-[#5B5B5B] text-base font-semibold">
-            Minha jornada tem sido marcada por uma busca constante de
-            aprendizado e aperfeiçoamento. Estou sempre explorando novas
-            tecnologias e aplicando-as em projetos práticos, o que me permite
-            crescer continuamente e aprimorar minhas habilidades.
+          My journey has been marked by a constant search for
+          learning and improvement. Im always exploring new
+          technologies and applying them in practical projects, which allows me
+          continually grow and improve my skills.
           </p>
         </div>
         <div className="flex flex-col gap-[50px] md:gap-[75px] mt-24 items-end text-start relative training">

@@ -20,17 +20,17 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     name: "Gam3rStore",
-    description: `A T3chStore é uma loja eletrônica desenvolvida com foco em 
-    desempenho, modernidade e eficiência. O projeto utiliza uma stack 
-    robusta e atual, combinando TypeScript para segurança no desenvolvimento,
-    React para uma interface web dinâmica e responsiva, e React Native 
-    para proporcionar uma experiência móvel fluida. No back-end, a aplicação 
-    é alimentada por NestJS e Node.js, oferecendo uma estrutura modular 
-    e escalável. Para estilização, usamos TailwindCSS, garantindo um design 
-    minimalista e altamente customizável. O banco de dados é gerenciado 
-    com PostgreSQL e Prisma ORM, facilitando a manipulação de dados 
-    de forma eficiente. A build do projeto é otimizada com Turborepo, 
-    garantindo rapidez e flexibilidade no desenvolvimento monorepo.`,
+    description: `Gam3rStore is an electronic store developed with a focus on 
+    performance, modernity and efficiency. The project uses a stack 
+    robust and current, combining TypeScript for development security,
+    React for a dynamic and responsive web interface, and React Native 
+    to provide a fluid mobile experience. Without back-end, an application 
+    is powered by NestJS and Node.js, offering a modular framework 
+    and scalable. For styling, we use TailwindCSS, ensuring a 
+    minimalist and highly customizable. The database is managed 
+    with PostgreSQL and Prisma ORM, facilitating data manipulation 
+    efficiently. The project build is optimized with Turborepo, 
+    ensuring speed and flexibility in monorepo development.`,
     technologies: ["TypeScript", "React", "NestJS", "Node.js", "TailwindCSS", "PostgreSQL", "Prisma ORM", "Turborepo"],
     icons: [
       { component: SiTypescript, name: "TypeScript" },
@@ -54,13 +54,13 @@ const projects = [
   },
   {
     name: "InOrbit",
-    description: `InOrbit é uma aplicação para gerenciar metas de forma simples e eficiente, 
-    utilizando TypeScript tanto no front-end quanto no back-end, 
-    garantindo tipagem e segurança em toda a aplicação. No front-end, React
-    oferece uma interface intuitiva para acompanhar o progresso das metas, enquanto no back-end, 
-    Fastify e Node.js proporcionam uma API rápida e robusta. O gerenciamento de dados é feito
-    com PostgreSQL e Drizzle ORM, permitindo interações eficientes e seguras com o banco de dados. 
-    TailwindCSS é usado para estilizar a aplicação, proporcionando um design moderno e responsivo.`,
+    description: `InOrbit is an application to manage goals in a simple and efficient way, 
+    using TypeScript on both the front-end and back-end, 
+    ensuring typing and security throughout the application. On the front end, React
+    offers an intuitive interface to track goal progress, while on the backend, 
+    Fastify and Node.js provide a fast and robust API. Data management is done
+    with PostgreSQL and Drizzle ORM, allowing efficient and secure interactions with the database. 
+    TailwindCSS is used to style the application, providing a modern and responsive design.`,
     technologies: ["TypeScript", "React", "Fastify", "Node.js", "TailwindCSS", "PostgreSQL", "Drizzle ORM"],
     icons: [
       { component: SiTypescript, name: "TypeScript" },
@@ -119,7 +119,7 @@ function SimpleImageSlider({ images }: { images: (StaticImageData | string)[] })
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
       setFade(false);
-    }, 50); // Tempo da transição de fade
+    }, 200); // Tempo da transição de fade
   };
 
   const prevSlide = () => {
@@ -127,7 +127,7 @@ function SimpleImageSlider({ images }: { images: (StaticImageData | string)[] })
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
       setFade(false);
-    }, 100); // Tempo da transição de fade
+    }, 200); // Tempo da transição de fade
   };
 
   return (
@@ -169,7 +169,7 @@ export default function Projects() {
 
   return (
     <div className="flex flex-col p-12 projects gap-6">
-      <h1 className="text-zinc-500 font-semibold text-start pb-12 text-xl">Projetos</h1>
+      <h1 className="text-zinc-500 font-semibold text-start pb-12 text-xl">Projects</h1>
       {projects.map((project, index) => (
         <div key={index} className="flex flex-col lg:flex-row lg:gap-12 mb-8 project-item">
           <div className="w-full lg:w-1/2">

@@ -4,13 +4,13 @@ export default function Footer() {
   return (
     <div className="w-full mt-24 justify-center flex text-center mb-6">
       <div className="flex flex-col gap-4">
-        <h1 className="font-thin">Feito com &quot;❤️&quot; por Niel</h1>
+        <h1 className="font-thin">Made with &quot;❤️&quot; by Niel</h1>
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           <Link href="https://github.com/nielassis" target="_blank">
             <p className="underline">GitHub</p>
           </Link>
           <p>|</p>
-          <Link href="https://www.linkedin.com/in/daniel-assis-09a295321/" target="_blank">
+          <Link href="https://www.linkedin.com/in/nielassis" target="_blank">
             <p className="underline">LinkedIn</p>
           </Link>
           <p>|</p>
